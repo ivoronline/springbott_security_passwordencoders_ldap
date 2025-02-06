@@ -25,7 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   //====================================================================
   @Override
   protected void configure(HttpSecurity httpSecurity) throws Exception {
-    httpSecurity.authorizeRequests().antMatchers("/EncodePassword").permitAll(); //Anonymous Access-no login
+    httpSecurity.authorizeRequests().antMatchers("/EncodePassword").permitAll(); //Anonymous     Access
     httpSecurity.authorizeRequests().anyRequest().authenticated();               //Authenticated Access
     httpSecurity.formLogin();                                                    //Default Login Form
   }
