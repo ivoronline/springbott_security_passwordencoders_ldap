@@ -1,4 +1,4 @@
-package com.ivoronline.springbott_security_passwordencoders_ldap.controllers;
+package com.ivoronline.controllers;
 
 import org.springframework.security.crypto.password.LdapShaPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;

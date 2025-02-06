@@ -1,4 +1,4 @@
-package com.ivoronline.springbott_security_passwordencoders_ldap.config;
+package com.ivoronline.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
