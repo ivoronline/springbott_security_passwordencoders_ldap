@@ -3,14 +3,15 @@ package com.ivoronline.springbott_security_passwordencoders_ldap.controllers;
 import org.springframework.security.crypto.password.LdapShaPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class MyController {
 
-  @ResponseBody
+  //=================================================================
+  // ENCODE PASSWORD
+  //=================================================================
   @RequestMapping("/EncodePassword")
   public String encodePassword(@RequestParam String password) {
 
@@ -25,7 +26,9 @@ public class MyController {
 
   }
 
-  @ResponseBody
+  //=================================================================
+  // HELLO
+  //=================================================================
   @RequestMapping("/Hello")
   public String hello() {
     return "Hello from Controller";
